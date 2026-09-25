@@ -1,0 +1,2 @@
+include(gcc-15-linux-x86)
+include(cppstd-17)
