@@ -5,6 +5,9 @@ compiler=gcc
 compiler.version=15
 # Old libstdc++ ABI, matching the clang-20-linux profiles
 compiler.libcxx=libstdc++
+# settings.yml lists these as the string "None", so they must be set explicitly
+compiler.threads=posix
+compiler.exception=None
 build_type=Release
 [buildenv]
 CC=/opt/rh/gcc-toolset-15/root/usr/bin/gcc
