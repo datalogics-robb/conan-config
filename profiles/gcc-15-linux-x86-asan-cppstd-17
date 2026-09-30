@@ -1,0 +1,3 @@
+# Requires gcc-toolset-15-libasan-devel.i686 and libasan8.i686
+include(gcc-15-linux-x86-cppstd-17)
+include(sanitizer-address)

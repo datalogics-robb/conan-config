@@ -1,0 +1,5 @@
+include(global)
+include(gcc-15-linux)
+
+[settings]
+arch=x86
