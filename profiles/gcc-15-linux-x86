@@ -3,3 +3,7 @@ include(gcc-15-linux)
 
 [settings]
 arch=x86
+[conf]
+# GCC defaults to x87 math on i386, whose excess precision differs from every other target
+tools.build:cflags+=["-msse2","-mfpmath=sse"]
+tools.build:cxxflags+=["-msse2","-mfpmath=sse"]
